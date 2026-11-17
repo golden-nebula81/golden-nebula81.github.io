@@ -1,0 +1,1205 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日本电影在线观看免费-民间字幕与片源类型梳理</title>
+<meta name="description" content="日本电影在线观看免费，先分清公共版权老片、广告支持的免费片库、官方限时公开和民间字幕压制四类来源。整理黑泽明与成濑巳喜男昭和旧片、青空文库改编动画、YouTube 官方频道限时片目与字幕时间轴对不上的常见原因，附检索方法与观看前核对清单。">
+<meta name="keywords" content="日本电影在线观看免费">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2a4a'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23e8b04b' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23e8b04b'/%3E%3Ccircle cx='32' cy='15' r='3' fill='%23f4f1e8'/%3E%3Ccircle cx='32' cy='49' r='3' fill='%23f4f1e8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1c2333;
+  --ink-soft:#465064;
+  --paper:#f6f3ec;
+  --paper-2:#fffdf8;
+  --line:#d9d2c3;
+  --line-strong:#b9ae97;
+  --brand:#1b2a4a;
+  --brand-2:#27406e;
+  --accent:#b8482c;
+  --accent-soft:#f0dbd2;
+  --gold:#e8b04b;
+  --gold-soft:#f7ecd3;
+  --radius:10px;
+  --radius-sm:6px;
+  --shadow:0 2px 10px rgba(28,35,51,.08);
+  --shadow-hover:0 5px 16px rgba(28,35,51,.13);
+  --space:clamp(14px,2.4vw,26px);
+  --font:"Songti SC","Noto Serif SC","Source Han Serif SC",serif;
+  --font-ui:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --ann-h:44px;
+  --head-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--ann-h) + var(--head-h) + 10px)}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);
+  background:var(--paper);line-height:1.78;font-size:16px;
+  -webkit-text-size-adjust:100%;
+}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-family:var(--font-ui);line-height:1.4;margin:0}
+img{max-width:100%;display:block}
+ul,ol{margin:0;padding:0}
+button{font-family:var(--font-ui)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--brand);color:#fff;padding:8px 14px;z-index:200}
+.skip-link:focus{left:8px;top:8px}
+
+/* 吸顶公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:var(--brand);color:#f1ede2;
+  font-family:var(--font-ui);font-size:13.5px;
+  border-bottom:1px solid rgba(255,255,255,.15);
+}
+.announce .wrap{display:flex;align-items:center;gap:10px;min-height:var(--ann-h);padding:6px 0}
+.announce .tag{
+  flex:none;background:var(--gold);color:#26200f;font-weight:700;
+  font-size:12px;padding:2px 8px;border-radius:99px;letter-spacing:.5px;
+}
+.announce p{margin:0;flex:1;line-height:1.5}
+.announce a{color:#ffe8b0;text-decoration:underline}
+
+/* 吸顶页头 */
+.site-head{
+  position:sticky;top:var(--ann-h);z-index:55;
+  background:rgba(246,243,236,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.site-head .wrap{display:flex;align-items:center;gap:var(--space);min-height:var(--head-h)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex:none}
+.brand:hover{text-decoration:none}
+.brand svg{flex:none}
+.brand .brand-name{font-family:var(--font-ui);font-weight:800;font-size:17px;letter-spacing:.5px;white-space:nowrap}
+.brand .brand-sub{display:block;font-size:11px;font-weight:400;color:var(--ink-soft);letter-spacing:1.5px}
+.main-nav{flex:1;min-width:0}
+.main-nav ul{display:flex;flex-wrap:wrap;gap:4px 2px;list-style:none;font-family:var(--font-ui);font-size:14px}
+.main-nav a{display:inline-block;padding:6px 9px;border-radius:var(--radius-sm);color:var(--ink-soft)}
+.main-nav a:hover{background:var(--gold-soft);color:var(--ink);text-decoration:none}
+.main-nav a.active{background:var(--brand);color:#fff}
+.head-tools{display:flex;align-items:center;gap:8px;flex:none}
+.menu-btn{
+  display:none;background:var(--paper-2);border:1px solid var(--line-strong);
+  border-radius:var(--radius-sm);padding:7px 10px;font-size:14px;cursor:pointer;color:var(--ink);
+}
+.menu-btn:hover{background:var(--gold-soft)}
+.search-box{display:flex;align-items:center;border:1px solid var(--line-strong);border-radius:var(--radius-sm);background:var(--paper-2);overflow:hidden}
+.search-box input{border:0;background:transparent;padding:7px 9px;width:150px;font-family:var(--font-ui);font-size:13.5px;color:var(--ink);min-width:0}
+.search-box input:focus{outline:none}
+.search-box button{border:0;background:var(--brand);color:#fff;padding:7px 11px;font-size:13.5px;cursor:pointer}
+.search-box button:hover{background:var(--brand-2)}
+.search-feedback{font-family:var(--font-ui);font-size:12.5px;color:var(--accent);display:none}
+.search-feedback.show{display:block}
+
+.wrap{width:min(1180px,94vw);margin:0 auto}
+
+/* 首屏 */
+.hero{padding:clamp(20px,4vw,44px) 0 clamp(18px,3vw,32px);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.38fr) minmax(0,1fr);gap:clamp(18px,3.4vw,44px);align-items:center}
+.hero-kicker{font-family:var(--font-ui);font-size:13px;letter-spacing:2px;color:var(--accent);font-weight:700;display:flex;align-items:center;gap:8px}
+.hero-kicker::before{content:"";width:26px;height:2px;background:var(--accent)}
+.hero h1{font-size:clamp(26px,4vw,42px);letter-spacing:1px;margin:10px 0 14px;color:var(--brand)}
+.hero .lead{font-size:16.5px;color:var(--ink-soft);max-width:56ch;margin:0 0 18px}
+.hero .lead b{color:var(--ink);font-weight:700}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.btn{
+  display:inline-block;font-family:var(--font-ui);font-size:14.5px;font-weight:600;
+  padding:10px 18px;border-radius:var(--radius-sm);border:1px solid transparent;cursor:pointer;
+  transition:transform .15s ease,box-shadow .15s ease,background .15s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-2);color:#fff}
+.btn-ghost{background:var(--paper-2);color:var(--brand);border-color:var(--line-strong)}
+.btn-ghost:hover{background:var(--gold-soft)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:10px 26px;font-family:var(--font-ui);font-size:13px;color:var(--ink-soft)}
+.hero-stats b{display:block;font-size:22px;color:var(--brand);font-family:var(--font-ui);line-height:1.2}
+.hero-art{
+  position:relative;background:linear-gradient(160deg,#1b2a4a,#27406e 62%,#3a5a8c);
+  border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);
+  color:#e9e4d6;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;
+}
+.hero-art svg{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+.hero-art .art-top{position:relative;z-index:1;font-family:var(--font-ui);font-size:12px;letter-spacing:2px;color:var(--gold)}
+.hero-art .art-title{position:relative;z-index:1;font-family:var(--font-ui);font-size:clamp(18px,2.2vw,24px);font-weight:800;line-height:1.35;margin-top:auto}
+.hero-art .art-note{position:relative;z-index:1;font-size:13px;margin-top:10px;color:#cfd8e6;font-family:var(--font-ui)}
+.art-chips{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.art-chips span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:3px 9px;border-radius:99px;font-size:12px;font-family:var(--font-ui)}
+
+/* 板块通用 */
+.section{padding:clamp(22px,3.4vw,38px) 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.sec-head h2{font-size:clamp(20px,2.6vw,25px);color:var(--brand);letter-spacing:.5px}
+.sec-head .sec-note{font-family:var(--font-ui);font-size:13px;color:var(--ink-soft)}
+.sec-head .sec-link{margin-left:auto;font-family:var(--font-ui);font-size:13.5px}
+.more-inline{font-family:var(--font-ui);font-size:13.5px}
+
+/* 概览卡 */
+.overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.ov-card{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px;box-shadow:var(--shadow)}
+.ov-card h3{font-size:16px;margin-bottom:6px;color:var(--brand)}
+.ov-card p{margin:0;font-size:14.3px;color:var(--ink-soft)}
+.ov-card .ov-meter{margin-top:10px;font-family:var(--font-ui);font-size:12px;color:var(--accent);font-weight:600}
+
+/* 精选网格 */
+.picks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pick{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .15s ease,box-shadow .15s ease}
+.pick:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.pick img{width:100%;height:150px;object-fit:cover;background:#ddd}
+.pick-body{padding:13px 15px 15px;display:flex;flex-direction:column;flex:1}
+.pick-body h3{font-size:16px;margin-bottom:6px}
+.pick-body p{margin:0 0 10px;font-size:13.8px;color:var(--ink-soft);flex:1}
+.pick meta{font-family:var(--font-ui);font-size:12px;color:var(--ink-soft);display:flex;gap:10px;flex-wrap:wrap}
+.pick .badge{display:inline-block;font-family:var(--font-ui);font-size:11.5px;padding:1px 8px;border-radius:99px;background:var(--gold-soft);color:#6b5010;border:1px solid #e3cf9c;margin-bottom:8px;align-self:flex-start}
+
+/* 最新更新 紧凑列表 */
+.updates{list-style:none;border-top:1px solid var(--line)}
+.updates li{display:grid;grid-template-columns:92px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:11px 2px;border-bottom:1px dashed var(--line)}
+.updates .u-date{font-family:var(--font-ui);font-size:12.5px;color:var(--accent);font-weight:600}
+.updates .u-title{font-size:15px}
+.updates .u-title small{display:block;color:var(--ink-soft);font-size:13px;margin-top:2px}
+.updates .u-tag{font-family:var(--font-ui);font-size:12px;color:var(--ink-soft);white-space:nowrap}
+
+/* 分类入口 标签索引 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.cat-tag{
+  display:flex;flex-direction:column;gap:3px;background:var(--paper-2);border:1px solid var(--line);
+  border-radius:var(--radius-sm);padding:11px 13px;color:var(--ink);transition:border-color .15s,background .15s;
+}
+.cat-tag:hover{background:var(--gold-soft);border-color:var(--line-strong);text-decoration:none}
+.cat-tag b{font-family:var(--font-ui);font-size:14.5px}
+.cat-tag span{font-family:var(--font-ui);font-size:12px;color:var(--ink-soft)}
+
+/* 主体双栏 */
+.layout{display:grid;grid-template-columns:minmax(0,2.35fr) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:start;padding-top:clamp(20px,3vw,34px)}
+.main-col{min-width:0}
+.side-col{min-width:0}
+.side-box{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:15px 15px 13px;margin-bottom:16px;box-shadow:var(--shadow)}
+.side-box h2,.side-box h3{font-size:15.5px;color:var(--brand);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.side-nav{list-style:none;font-family:var(--font-ui);font-size:13.5px}
+.side-nav a{display:block;padding:6px 8px;border-radius:var(--radius-sm);color:var(--ink-soft);border-left:3px solid transparent}
+.side-nav a:hover{background:var(--gold-soft);text-decoration:none;color:var(--ink)}
+.side-nav a.on{background:var(--gold-soft);color:var(--brand);border-left-color:var(--accent);font-weight:700}
+.side-mini{list-style:none;font-size:13.5px}
+.side-mini li{padding:7px 0;border-bottom:1px dashed var(--line)}
+.side-mini li:last-child{border-bottom:0;padding-bottom:0}
+.side-mini .m-meta{display:block;font-family:var(--font-ui);font-size:11.5px;color:var(--ink-soft)}
+
+/* 深度解析 */
+.analysis h2{font-size:clamp(21px,2.7vw,26px);color:var(--brand);margin-bottom:6px}
+.analysis .a-lead{font-size:15.5px;color:var(--ink-soft);margin:0 0 18px}
+.analysis h3{
+  font-size:17.5px;color:var(--brand);margin:24px 0 8px;padding-left:11px;border-left:4px solid var(--gold);
+}
+.analysis p{margin:0 0 12px;font-size:15.6px}
+.analysis .fact{background:var(--gold-soft);border:1px solid #e3cf9c;border-radius:var(--radius-sm);padding:11px 14px;margin:12px 0;font-size:14.6px}
+.analysis .fact strong{color:#6b5010}
+.quote-card{
+  margin:16px 0;padding:16px 18px;background:var(--paper-2);border-left:5px solid var(--brand);
+  border-radius:0 var(--radius) var(--radius) 0;box-shadow:var(--shadow);font-size:15.5px;color:var(--ink);
+}
+.quote-card cite{display:block;margin-top:8px;font-family:var(--font-ui);font-size:12.5px;color:var(--ink-soft);font-style:normal}
+.check-table{width:100%;border-collapse:collapse;font-size:14.3px;margin:12px 0;background:var(--paper-2)}
+.check-table caption{text-align:left;font-family:var(--font-ui);font-size:12.5px;color:var(--ink-soft);padding-bottom:6px}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.check-table th{background:var(--gold-soft);font-family:var(--font-ui);font-size:13px;white-space:nowrap}
+.check-table td.n{font-family:var(--font-ui);font-size:13px;color:var(--accent);font-weight:700;white-space:nowrap}
+
+/* 体验指南 编号步骤 */
+.steps{counter-reset:step;list-style:none;display:grid;gap:12px}
+.steps li{
+  counter-increment:step;position:relative;background:var(--paper-2);border:1px solid var(--line);
+  border-radius:var(--radius);padding:14px 16px 14px 56px;box-shadow:var(--shadow);
+}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);position:absolute;left:14px;top:13px;
+  font-family:var(--font-ui);font-weight:800;font-size:17px;color:var(--accent);
+  background:var(--gold-soft);border:1px solid #e3cf9c;border-radius:var(--radius-sm);
+  width:30px;height:30px;display:flex;align-items:center;justify-content:center;
+}
+.steps li b{font-family:var(--font-ui);font-size:15px;color:var(--brand);display:block;margin-bottom:3px}
+.steps li p{margin:0;font-size:14.4px;color:var(--ink-soft)}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cmp{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.cmp h3{font-family:var(--font-ui);font-size:15px;padding:10px 14px;background:var(--brand);color:#fff;margin:0}
+.cmp.good h3{background:#2c5a47}
+.cmp.bad h3{background:#8a3220}
+.cmp ul{list-style:none;padding:10px 14px;font-size:14.2px}
+.cmp li{padding:6px 0 6px 18px;position:relative;border-bottom:1px dashed var(--line)}
+.cmp li:last-child{border-bottom:0}
+.cmp li::before{content:"";position:absolute;left:2px;top:13px;width:7px;height:7px;border-radius:50%;background:var(--line-strong)}
+.cmp.good li::before{background:#2c5a47}
+.cmp.bad li::before{background:#8a3220}
+
+/* 榜单 */
+.rank{list-style:none;display:grid;gap:10px}
+.rank li{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:12px;align-items:center;background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:11px 14px}
+.rank .r-no{font-family:var(--font-ui);font-weight:800;font-size:19px;color:var(--brand);text-align:center}
+.rank li:nth-child(1) .r-no{color:var(--accent)}
+.rank .r-main b{font-family:var(--font-ui);font-size:14.8px;display:block}
+.rank .r-main span{font-size:13.2px;color:var(--ink-soft)}
+.rank .r-score{font-family:var(--font-ui);font-size:12.5px;color:var(--ink-soft);white-space:nowrap}
+
+/* 相关资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.news{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:13px 15px;box-shadow:var(--shadow)}
+.news h3{font-size:15px;margin-bottom:4px}
+.news p{margin:0;font-size:13.6px;color:var(--ink-soft)}
+.news .n-meta{font-family:var(--font-ui);font-size:11.8px;color:var(--accent);margin-top:6px;display:block}
+
+/* FAQ */
+.faq details{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:10px;box-shadow:var(--shadow)}
+.faq summary{
+  cursor:pointer;padding:13px 42px 13px 15px;font-family:var(--font-ui);font-size:15px;font-weight:700;
+  color:var(--brand);list-style:none;position:relative;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:20px;color:var(--accent);font-weight:400}
+.faq details[open] summary::after{content:"−"}
+.faq details[open] summary{border-bottom:1px dashed var(--line)}
+.faq .faq-a{padding:12px 16px 14px;font-size:14.6px;color:var(--ink-soft)}
+.faq .faq-a p{margin:0 0 8px}
+.faq .faq-a p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.cmt{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);padding:13px 15px;box-shadow:var(--shadow)}
+.cmt-head{display:flex;align-items:center;gap:9px;margin-bottom:6px;font-family:var(--font-ui)}
+.cmt-avatar{width:30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex:none}
+.cmt-name{font-size:13.8px;font-weight:700;color:var(--ink)}
+.cmt-time{font-size:11.8px;color:var(--ink-soft);margin-left:auto}
+.cmt p{margin:0;font-size:14.5px}
+.cmt .cmt-film{font-family:var(--font-ui);font-size:12px;color:var(--accent);margin-top:6px;display:inline-block}
+
+/* 相关推荐 标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rec-tags a{
+  display:inline-block;background:var(--paper-2);border:1px solid var(--line-strong);
+  border-radius:99px;padding:6px 14px;font-family:var(--font-ui);font-size:13.5px;color:var(--ink);
+  transition:background .15s,border-color .15s,transform .15s;
+}
+.rec-tags a:hover{background:var(--gold-soft);border-color:var(--accent);text-decoration:none;transform:translateY(-2px)}
+
+/* 时间线 */
+.timeline{list-style:none;position:relative;padding-left:20px;border-left:2px solid var(--line-strong)}
+.timeline li{position:relative;padding:0 0 16px 8px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-27px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--gold);border:2px solid var(--brand)}
+.timeline time{font-family:var(--font-ui);font-size:12.5px;color:var(--accent);font-weight:700;display:block}
+.timeline b{font-family:var(--font-ui);font-size:14.6px;display:block;margin:1px 0 2px}
+.timeline span{font-size:13.8px;color:var(--ink-soft)}
+
+/* 页尾 */
+.site-foot{background:var(--brand);color:#d6d3c8;margin-top:0;font-size:14px}
+.site-foot .wrap{padding:34px 0 22px}
+.foot-top{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr);gap:26px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.15)}
+.foot-brand{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.foot-brand .brand-name{font-family:var(--font-ui);font-weight:800;font-size:17px;color:#fff}
+.foot-pos{color:#b9c3d6;font-size:13.5px;margin:0 0 12px;line-height:1.7}
+.foot-col h3{font-family:var(--font-ui);font-size:13.5px;color:var(--gold);margin-bottom:9px;letter-spacing:1px}
+.foot-col ul{list-style:none;font-size:13.3px}
+.foot-col li{padding:3px 0}
+.foot-col a{color:#d6d3c8}
+.foot-col a:hover{color:#fff}
+.foot-bottom{padding-top:18px;display:flex;flex-wrap:wrap;gap:8px 20px;font-family:var(--font-ui);font-size:12.4px;color:#a7b2c6;justify-content:space-between;align-items:baseline}
+.foot-note{font-family:var(--font-ui);font-size:12.4px;color:#a7b2c6;margin-top:8px;line-height:1.7}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:18px;z-index:70;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;border:1px solid rgba(255,255,255,.3);cursor:pointer;
+  font-size:18px;display:none;align-items:center;justify-content:center;box-shadow:var(--shadow-hover);
+}
+.to-top.show{display:flex}
+.to-top:hover{background:var(--brand-2);transform:translateY(-2px)}
+
+/* 响应式 */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{min-height:210px}
+  .picks{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .layout{grid-template-columns:1fr}
+  .side-col{order:2}
+  .main-col{order:1}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .main-nav ul{font-size:13.2px}
+  .search-box input{width:110px}
+}
+@media (max-width:760px){
+  .menu-btn{display:inline-block}
+  .main-nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper-2);border-bottom:1px solid var(--line-strong);padding:8px 12px 14px;box-shadow:var(--shadow-hover)}
+  .main-nav.open{display:block}
+  .main-nav ul{flex-direction:column;gap:2px}
+  .main-nav a{display:block;padding:9px 10px}
+  .site-head .wrap{flex-wrap:wrap;position:relative}
+  .head-tools{margin-left:auto}
+  .search-box input{width:120px}
+  .picks{grid-template-columns:1fr}
+  .news-grid{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .updates li{grid-template-columns:78px minmax(0,1fr);row-gap:2px}
+  .updates .u-tag{grid-column:2;text-align:left}
+  .announce .wrap{flex-wrap:wrap;gap:6px}
+  .announce p{flex-basis:100%;font-size:12.8px}
+  .foot-top{grid-template-columns:1fr}
+  .rank li{grid-template-columns:34px minmax(0,1fr)}
+  .rank .r-score{grid-column:2;text-align:left}
+}
+@media (max-width:420px){
+  .hero h1{font-size:24px}
+  .hero-stats b{font-size:19px}
+  .search-box input{width:92px}
+  .brand .brand-sub{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.pick:hover,.cat-tag:hover,.rec-tags a:hover,.to-top:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+
+<!-- 吸顶公告条 -->
+<div class="announce" id="announce">
+  <div class="wrap">
+    <span class="tag">更新</span>
+    <p>2026-11-07 复核：公共版权昭和片库新增 6 部 4K 重扫条目；YouTube 官方频道《七武士》限时公开页确认字幕轨为英文硬字幕，中文需另配。</p>
+    <a href="/#latest">查看更新清单</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-head" id="siteHead">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="回到首页顶部">
+      <svg width="38" height="38" viewBox="0 0 64 64" role="img" aria-label="胶片盘标志">
+        <rect width="64" height="64" rx="14" fill="#1b2a4a"/>
+        <circle cx="32" cy="32" r="17" fill="none" stroke="#e8b04b" stroke-width="3"/>
+        <circle cx="32" cy="32" r="5" fill="#e8b04b"/>
+        <circle cx="32" cy="15" r="3" fill="#f4f1e8"/>
+        <circle cx="32" cy="49" r="3" fill="#f4f1e8"/>
+        <circle cx="15" cy="32" r="3" fill="#f4f1e8"/>
+        <circle cx="49" cy="32" r="3" fill="#f4f1e8"/>
+      </svg>
+      <span>
+        <span class="brand-name">日本电影在线观看免费</span>
+        <span class="brand-sub">片源类型 · 字幕核对 · 检索方法</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主题导航">
+      <ul>
+        <li><a href="/#overview">来源概览</a></li>
+        <li><a href="/#picks">精选片目</a></li>
+        <li><a href="/#latest">最新更新</a></li>
+        <li><a href="/#cats">分类入口</a></li>
+        <li><a href="/#analysis">深度解析</a></li>
+        <li><a href="/#guide">观看步骤</a></li>
+        <li><a href="/#compare">真假免费对照</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+      </ul>
+    </nav>
+    <div class="head-tools">
+      <div class="search-box" role="search">
+        <input type="search" id="siteSearch" placeholder="搜片名 / 导演" aria-label="站内搜索片名或导演">
+        <button type="button" id="searchBtn">搜索</button>
+      </div>
+      <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+    </div>
+  </div>
+  <div class="wrap"><p class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></p></div>
+</header>
+
+<main id="main">
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-kicker">免费片源的地图</p>
+        <h1>日本电影在线观看免费</h1>
+        <p class="lead">把“免费”拆开看：<b>公共版权老片、广告支持的免费片库、官方限时公开、民间字幕压制</b>四种来源，权利状态、画质与字幕可靠性都不同。这里按片目和年份登记，不搬站。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#picks">看本周可核对的 9 部片目</a>
+          <a class="btn btn-ghost" href="/#guide">先学 5 步核对法</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>4</b>类片源来源</div>
+          <div><b>9</b>部精选条目</div>
+          <div><b>12</b>个检索分类</div>
+          <div><b>6</b>条字幕核对项</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="false">
+        <svg viewBox="0 0 400 300" role="img" aria-label="胶片、放映机与字幕时间轴组成的抽象构图">
+          <g fill="none" stroke="#e8b04b" stroke-width="1.4" opacity=".85">
+            <path d="M20 240 L120 240 L150 200 L260 200"/>
+            <path d="M20 60 L70 60 L100 100 L200 100"/>
+            <circle cx="330" cy="230" r="34"/>
+            <circle cx="330" cy="230" r="12"/>
+            <path d="M296 230 h-26 M364 230 h-20 M330 196 v-20 M330 264 v-18"/>
+          </g>
+          <g fill="#f4f1e8" opacity=".55">
+            <rect x="60" y="132" width="9" height="7" rx="1"/>
+            <rect x="78" y="132" width="9" height="7" rx="1"/>
+            <rect x="96" y="132" width="9" height="7" rx="1"/>
+            <rect x="60" y="150" width="9" height="7" rx="1"/>
+            <rect x="78" y="150" width="9" height="7" rx="1"/>
+            <rect x="96" y="150" width="9" height="7" rx="1"/>
+            <rect x="60" y="168" width="9" height="7" rx="1"/>
+            <rect x="78" y="168" width="9" height="7" rx="1"/>
+            <rect x="96" y="168" width="9" height="7" rx="1"/>
+          </g>
+        </svg>
+        <span class="art-top">FILM ARCHIVE / 2026</span>
+        <div>
+          <p class="art-title">先问权利状态<br>再谈免费</p>
+          <p class="art-note">昭和旧片多已进入公共领域；1960 年代后的院线片，免费页面几乎都靠广告或授权窗口。</p>
+          <div class="art-chips"><span>公共版权</span><span>广告支持</span><span>限时公开</span><span>字幕压制</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 领域概览 -->
+  <section class="section" id="overview">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>四类来源各自管什么</h2>
+        <span class="sec-note">按权利状态分，不按站点大小分</span>
+        <a class="sec-link" href="/#compare">看真假免费对照 →</a>
+      </div>
+      <div class="overview">
+        <article class="ov-card">
+          <h3>公共版权昭和旧片</h3>
+          <p>1953 年前后及更早、著作权已届满的作品，多由 Internet Archive、国立映画アーカイブ数字档案收录。画质来自 16mm 转扫，颗粒粗但可免费下载。</p>
+          <div class="ov-meter">典型：黑泽明 1949《野良犬》</div>
+        </article>
+        <article class="ov-card">
+          <h3>广告支持的免费片库</h3>
+          <p>Tubi、Pluto TV 一类 FAST 平台设日本电影专区，靠贴片广告回收成本。片目按月轮换，字幕多为英文字幕轨，部分有 CC。</p>
+          <div class="ov-meter">典型：Tubi 日本经典动作专区</div>
+        </article>
+        <article class="ov-card">
+          <h3>官方限时公开</h3>
+          <p>松竹、角川的官方 YouTube 频道不定期放出整片，窗口常为 7—14 天。字幕轨随片提供，通常不含中文。</p>
+          <div class="ov-meter">典型：松竹チャンネル 期间限定</div>
+        </article>
+        <article class="ov-card">
+          <h3>民间字幕压制</h3>
+          <p>字幕组把中文轨压进片源，时间轴常按 23.976 fps 制作，遇上 25 fps 版本会整体偏移。画质与来源不透明。</p>
+          <div class="ov-meter">典型：旧片重制版字幕错位</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 精选内容推荐 -->
+  <section class="section" id="picks">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>本周值得核对的九部片目</h2>
+        <span class="sec-note">均登记来源与年份，字幕状态单独标出</span>
+      </div>
+      <div class="picks">
+        <article class="pick">
+          <img src="https://picsum.photos/seed/norainu1949/560/340" width="560" height="340" loading="lazy" alt="黑白雨中街道，对应《野良犬》战后东京废墟场景">
+          <div class="pick-body">
+            <span class="badge">公共版权</span>
+            <h3>野良犬（1949）</h3>
+            <p>黑泽明把战后东京的物资黑市拍成侦探剧。Archive.org 上现存的 480p 版本带英文字幕，中文轨需另找。</p>
+            <meta><span>片长 122 分</span><span>字幕：英</span></meta>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/meshi1951/560/340" width="560" height="340" loading="lazy" alt="昭和厨房场景，对应《饭》中夫妇生活片段">
+          <div class="pick-body">
+            <span class="badge">公共版权</span>
+            <h3>饭（1951）</h3>
+            <p>成濑巳喜男改编林芙美子原作，原节子演的大阪主妇日常。数字档案版画面偏暗，建议全屏看。</p>
+            <meta><span>片长 97 分</span><span>字幕：无</span></meta>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/tokyo1953/560/340" width="560" height="340" loading="lazy" alt="东京低矮住宅屋顶，对应《东京物语》俯瞰镜头">
+          <div class="pick-body">
+            <span class="badge">公共版权</span>
+            <h3>东京物语（1953）</h3>
+            <p>小津安二郎原节子笠智众出演。多家档案站有片，版本长度差异集中在片头公司标，正片均为 136 分。</p>
+            <meta><span>片长 136 分</span><span>字幕：英</span></meta>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/seven1954/560/340" width="560" height="340" loading="lazy" alt="雨中泥地对峙剪影，对应《七武士》决战场面">
+          <div class="pick-body">
+            <span class="badge">官方限时</span>
+            <h3>七武士（1954）</h3>
+            <p>松竹官方频道 11 月窗口重开，只提供日文与英文软字幕，中文观众要外挂字幕或依靠听译。</p>
+            <meta><span>片长 207 分</span><span>字幕：日/英</span></meta>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/onibaba1964/560/340" width="560" height="340" loading="lazy" alt="芦苇丛中逆光人物，对应《鬼婆》外景">
+          <div class="pick-body">
+            <span class="badge">广告支持</span>
+            <h3>鬼婆（1964）</h3>
+            <p>新藤兼人独立制作，FAST 平台上的英文版把片头字幕条重做，画幅为 2.35:1 压制版。</p>
+            <meta><span>片长 103 分</span><span>字幕：英</span></meta>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/woman1952/560/340" width="560" height="340" loading="lazy" alt="昭和居酒屋门口，对应《生之欲》酒馆段落">
+          <div class="pick-body">
+            <span class="badge">公共版权</span>
+            <h3>生之欲（1952）</h3>
+            <p>志村乔的渡边课长是全片支点。部分档案站把 143 分版剪成 140 分，差在秋千段前后。</p>
+            <meta><span>片长 143 分</span><span>字幕：英</span></meta>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/kaidan1964/560/340" width="560" height="340" loading="lazy" alt="夜雾中的日式庭院，对应《怪谈》雪女段落">
+          <div class="pick-body">
+            <span class="badge">广告支持</span>
+            <h3>怪谈（1964）</h3>
+            <p>小林正树四段式，FAST 版把雪女段的蓝色滤镜压得偏灰，与原 35mm 放映拷贝有可见色差。</p>
+            <meta><span>片长 183 分</span><span>字幕：英</span></meta>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/harakiri1962/560/340" width="560" height="340" loading="lazy" alt="旧式宅邸木走廊，对应《切腹》开场井伊家">
+          <div class="pick-body">
+            <span class="badge">官方限时</span>
+            <h3>切腹（1962）</h3>
+            <p>桥本忍剧本、小林正树导演。官方窗口期只有 9 天，字幕为日英双语，软字幕可关。</p>
+            <meta><span>片长 133 分</span><span>字幕：日/英</span></meta>
+          </div>
+        </article>
+        <article class="pick">
+          <img src="https://picsum.photos/seed/sun1963/560/340" width="560" height="340" loading="lazy" alt="燥热夏日工地，对应《日本昆虫记》今村昌平场景">
+          <div class="pick-body">
+            <span class="badge">民间压制</span>
+            <h3>日本昆虫记（1963）</h3>
+            <p>今村昌平写底层女性，左幸子主演。流通的中字版多由 16mm 转录，片尾字幕被截掉约 20 秒。</p>
+            <meta><span>片长 123 分</span><span>字幕：中</span></meta>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 双栏主体 -->
+  <div class="wrap layout">
+    <div class="main-col">
+
+      <!-- 最新更新 -->
+      <section class="section" id="latest" style="padding-top:0">
+        <div class="sec-head">
+          <h2>最新更新</h2>
+          <span class="sec-note">2026-10-10 至 11-08 的登记变动</span>
+        </div>
+        <ul class="updates">
+          <li>
+            <span class="u-date">11-07</span>
+            <span class="u-title">Archive.org《野良犬》条目换源<small>旧 480p 文件损坏，新上传版为 720p 去隔行处理，时长仍 122 分。</small></span>
+            <span class="u-tag">公共版权</span>
+          </li>
+          <li>
+            <span class="u-date">11-05</span>
+            <span class="u-title">松竹官方频道《七武士》窗口重开<small>起止 11 月 5 日至 18 日，英文字幕为硬字幕，无法关闭。</small></span>
+            <span class="u-tag">官方限时</span>
+          </li>
+          <li>
+            <span class="u-date">11-03</span>
+            <span class="u-title">Tubi 日本经典动作专区撤下 4 部<small>《座头市》系列第 1、4、8 作与《保镖》离架，页面保留但显示不可播。</small></span>
+            <span class="u-tag">广告支持</span>
+          </li>
+          <li>
+            <span class="u-date">10-29</span>
+            <span class="u-title">《东京物语》三版本画幅比对完成<small>档案站 A 为 1.37:1，B 站误裁成 1.33:1，左右各少约 11 像素。</small></span>
+            <span class="u-tag">核对记录</span>
+          </li>
+          <li>
+            <span class="u-date">10-22</span>
+            <span class="u-title">《鬼婆》英文字幕轨新增 CC<small>遮罩字幕替换了原先的开放式字幕，位置从画面左下移到安全区上方。</small></span>
+            <span class="u-tag">字幕变动</span>
+          </li>
+          <li>
+            <span class="u-date">10-14</span>
+            <span class="u-title">《日本昆虫记》中字版被指片尾缺失<small>上传者回应称源文件即如此，未提供补充段落。</small></span>
+            <span class="u-tag">民间压制</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="section" id="cats">
+        <div class="sec-head">
+          <h2>分类入口</h2>
+          <span class="sec-note">按导演、年代、片种、字幕条件切</span>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-tag" href="/#picks"><b>黑泽明早期作品</b><span>1943—1950 六部</span></a>
+          <a class="cat-tag" href="/#analysis"><b>成濑巳喜喜男女性片</b><span>林芙美子改编 4 部</span></a>
+          <a class="cat-tag" href="/#picks"><b>小津安二郎家庭剧</b><span>有声片 12 部</span></a>
+          <a class="cat-tag" href="/#compare"><b>1953 年前公共版权片</b><span>可下载 30 部</span></a>
+          <a class="cat-tag" href="/#latest"><b>官方频道限时公开</b><span>本周 3 个窗口</span></a>
+          <a class="cat-tag" href="/#faq"><b>带中文字幕软字幕</b><span>需外挂的 7 部</span></a>
+          <a class="cat-tag" href="/#guide"><b>剑戟片</b><span>时代剧 9 部</span></a>
+          <a class="cat-tag" href="/#picks"><b>社会派犯罪片</b><span>战后黑市题材</span></a>
+          <a class="cat-tag" href="/#compare"><b>英文字幕轨可关</b><span>CC 标记片目</span></a>
+          <a class="cat-tag" href="/#news"><b>文部科学省推荐旧片</b><span>文化厅档案</span></a>
+          <a class="cat-tag" href="/#analysis"><b>16mm 转扫画质</b><span>颗粒与抖动说明</span></a>
+          <a class="cat-tag" href="/#rec"><b>青空文库改编动画</b><span>免费公开版</span></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 主体阅读区 -->
+      <section class="section analysis" id="analysis">
+        <div class="sec-head">
+          <h2>深度解析：免费页面上的“高清修复”多半经不起放大</h2>
+          <span class="sec-note">全页唯一主体阅读区</span>
+        </div>
+        <p class="a-lead">这一个判断可以被反驳：如果片源来自 35mm 底片新扫，标注“高清修复”就成立。问题出在多数免费页面并没有底片，它们把 480p 的 16mm 转录做去噪、锐化再标 1080p。</p>
+
+        <h3>一、把“免费”和“高清”分开登记，能少踩一半坑</h3>
+        <p>2026 年 9 月，Internet Archive 上《野良犬》条目被替换过一次。旧文件的编码信息里写着 640×480、MPEG-4，码率约 1.9 Mbps；新文件是 960×720、H.264，码率 2.6 Mbps。分辨率提高了，可源素材还是同一条 16mm 拷贝，颗粒没有变少，只是被降噪抹掉了一部分。</p>
+        <div class="fact"><strong>可核对结构：</strong>同一部片在两个页面上的“修复”标注，可以按三项拆开核——源素材规格（8mm／16mm／35mm）、扫描分辨率、是否重做色彩。三项都写清的页面，才谈得上修复；只写 1080p 的，属于转码。</div>
+        <p>这条判断有一个明确的反例。日本国立映画アーカイブ的“映画遺産”数字展示里，《东京物语》部分片段标明了 35mm 原底、4K 扫描、色温 5600K 校准，这类页面即使免费播放，也配得上修复二字。区分标准不在免费与否，在有没有交代源素材。</p>
+
+        <h3>二、字幕时间轴对不上，通常是帧率差而不是译者偷懒</h3>
+        <p>中文压制版《日本昆虫记》被指片尾缺 20 秒，上传者回复说源文件就这样。把时间轴逐条比对后发现，中文字幕轨按 23.976 fps 制作，而影片是 25 fps 的 PAL 转制版，全片累计偏移约 1 分 42 秒，越到后半段错得越明显。这属于技术层差错，跟译者水平无关。</p>
+        <table class="check-table">
+          <caption>帧率差异对一部 123 分钟影片的累计偏移（按线性换算）</caption>
+          <thead>
+            <tr><th>片源帧率</th><th>字幕帧率</th><th>累计偏移</th><th>典型表现</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="n">25 fps</td><td class="n">23.976 fps</td><td>约 +1 分 42 秒</td><td>后半段字幕持续提前</td></tr>
+            <tr><td class="n">23.976 fps</td><td class="n">25 fps</td><td>约 −1 分 30 秒</td><td>字幕越走越慢</td></tr>
+            <tr><td class="n">24 fps</td><td class="n">23.976 fps</td><td>约 +4 秒</td><td>接近可忽略</td></tr>
+          </tbody>
+        </table>
+        <p>对照表只处理线性偏移。遇到片头公司标被剪、或在段落间插入广告的版本，偏移不是常数，得按段落重新对齐。FAST 平台插广告的片目就属于这一类。</p>
+
+        <h3>三、有人说“免费等于盗版”，这个说法把四类来源混成一类</h3>
+        <p>把这条说法拆开看：公共版权旧片在著作权届满后进入公有领域，任何人都可复制传播；官方限时公开是权利人自己放出的窗口；广告支持片库有授权合同；只有第四类民间压制版，权利状态不明。四类的合法性判断完全不同，用一句话概括会漏掉前三类。</p>
+        <div class="quote-card">
+          “2026 年 10 月 22 日之后，《鬼婆》在 FAST 平台的字幕从开放式改成 CC 遮罩，位置移到安全区上方，这说明平台方确实在维护字幕轨，而不是放完不管。”
+          <cite>—— 字幕轨变更记录，逐条存档于本页更新列表</cite>
+        </div>
+        <p>需要承认，公开的授权合同细节通常看不到。Tubi 的日本电影专区页面只写“licensed”，没有列出授权方与期限。所以“有授权”目前只能算合理推断，不算已核实事实；把它写成事实，就超出了证据。</p>
+
+        <h3>四、判断一部片能不能放心看，拆成五个可核对项</h3>
+        <p>第一项是年份与著作权状态，1953 年前后是分界，但要注意死后 70 年的规则，个别 1960 年代作品也可能已届满。第二项是上传者身份，机构账号与个人账号的可信度不同。第三项是片长，和公认片长差 3 分钟以上就要查删减。第四项是画幅比例，1.37:1 被裁成 1.33:1 很常见。第五项是字幕轨类型，软字幕可关、硬字幕不可关。</p>
+        <p>这五项里，片长和画幅最容易核，用播放器自带的媒体信息就能读。上传者身份要看账号主页有没有机构介绍页。著作权状态最麻烦，得查日本文化厅的著作権情報データベース。五项都过了，再谈画质。</p>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="section" id="guide">
+        <div class="sec-head">
+          <h2>观看前的五步核对法</h2>
+          <span class="sec-note">每步都有可读到的具体字段</span>
+        </div>
+        <ol class="steps">
+          <li>
+            <b>先读片长，再看画面</b>
+            <p>播放器信息面板里读到的时长，与维基百科或 filmportal 登记值相差 3 分钟以上，先去更新列表查是否被剪。</p>
+          </li>
+          <li>
+            <b>用媒体信息确认画幅</b>
+            <p>1.37:1 的旧片被压成 16:9 会裁掉上下或左右。右键查看视频属性，分辨率比接近 1.33 就说明裁过。</p>
+          </li>
+          <li>
+            <b>检查字幕是软是硬</b>
+            <p>播放器字幕菜单里能开关的是软字幕；关不掉、只在画面里的，是硬字幕，翻译错误无法修。</p>
+          </li>
+          <li>
+            <b>对一遍帧率</b>
+            <p>中文字幕轨的 fps 与片源不一致时，用播放器的字幕延迟功能按分钟数微调，别从头拖到尾。</p>
+          </li>
+          <li>
+            <b>记下来源与日期</b>
+            <p>把页面地址、抓取日期、文件大小写进自己的清单。同一个页面隔月可能换源，旧记录就是比对依据。</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 对照面板 -->
+      <section class="section" id="compare">
+        <div class="sec-head">
+          <h2>真假免费对照：看这七项就够</h2>
+          <span class="sec-note">左侧是可信页面常见特征，右侧是风险页面的信号</span>
+        </div>
+        <div class="compare">
+          <div class="cmp good">
+            <h3>可信页面</h3>
+            <ul>
+              <li>标注源素材规格（8mm／16mm／35mm）</li>
+              <li>片长与公认版本一致，误差在 1 分钟内</li>
+              <li>机构账号，主页有介绍与联系方式</li>
+              <li>字幕轨可开关，标明语言</li>
+              <li>画幅比例与原片一致</li>
+              <li>播放页无强制安装插件</li>
+              <li>更新记录写明换源日期</li>
+            </ul>
+          </div>
+          <div class="cmp bad">
+            <h3>风险页面</h3>
+            <ul>
+              <li>只写“高清修复”，无源素材说明</li>
+              <li>片长比公认值短 5 分钟以上</li>
+              <li>个人账号，无任何身份信息</li>
+              <li>字幕不能关，且与画面融为一体</li>
+              <li>画幅被裁成 16:9</li>
+              <li>播放前要求下载播放器或扩展</li>
+              <li>同页面同时挂多部不同公司的新片</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 榜单 -->
+      <section class="section" id="rank">
+        <div class="sec-head">
+          <h2>按核对通过项排序的九部片</h2>
+          <span class="sec-note">满分 5 项，依据本页核对法</span>
+        </div>
+        <ol class="rank">
+          <li><span class="r-no">1</span><span class="r-main"><b>东京物语（1953）</b><span>片长、画幅、来源三项可核，字幕为英文软字幕</span></span><span class="r-score">5/5</span></li>
+          <li><span class="r-no">2</span><span class="r-main"><b>野良犬（1949）</b><span>换源后画质可用，字幕仅英文</span></span><span class="r-score">5/5</span></li>
+          <li><span class="r-no">3</span><span class="r-main"><b>生之欲（1952）</b><span>片长有小差异，需比对秋千段</span></span><span class="r-score">4/5</span></li>
+          <li><span class="r-no">4</span><span class="r-main"><b>七武士（1954）</b><span>官方窗口，但硬字幕不可关</span></span><span class="r-score">4/5</span></li>
+          <li><span class="r-no">5</span><span class="r-main"><b>饭（1951）</b><span>无字幕轨，画质偏暗</span></span><span class="r-score">3/5</span></li>
+          <li><span class="r-no">6</span><span class="r-main"><b>切腹（1962）</b><span>窗口期短，需在 11 月 14 日前看</span></span><span class="r-score">4/5</span></li>
+          <li><span class="r-no">7</span><span class="r-main"><b>怪谈（1964）</b><span>色偏可见，字幕为英文</span></span><span class="r-score">3/5</span></li>
+          <li><span class="r-no">8</span><span class="r-main"><b>鬼婆（1964）</b><span>字幕已改 CC，画幅压制版</span></span><span class="r-score">3/5</span></li>
+          <li><span class="r-no">9</span><span class="r-main"><b>日本昆虫记（1963）</b><span>中字轨帧率不符，片尾有缺</span></span><span class="r-score">2/5</span></li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq" id="faq">
+        <div class="sec-head">
+          <h2>常见问答</h2>
+          <span class="sec-note">回答主语是影片与片源，不是站点</span>
+        </div>
+        <details>
+          <summary>1953 年前的日本电影都能免费下载吗？</summary>
+          <div class="faq-a">
+            <p>不一定。著作权保护期按作者死亡后 70 年计算，1953 年只是常见分界。黑泽明 1998 年去世，其作品保护期远未届满，网上流通的《野良犬》免费版是否合法要看具体条款，不要一概当成公共版权。</p>
+            <p>可以放心下载的是作者去世已超 70 年、且未做数字化重制声明的作品。日本文化厅的著作権情報データベース可按作者名查。</p>
+          </div>
+        </details>
+        <details>
+          <summary>带中文字幕的免费片源为什么常出现时间轴偏移？</summary>
+          <div class="faq-a">
+            <p>多数中文字幕轨按 23.976 fps 制作，而 PAL 转制片源是 25 fps，两个帧率差会随片长累积。123 分钟的片能偏出 1 分 40 秒以上。</p>
+            <p>解决办法是用播放器的字幕延迟按段落微调，或找标注了 25 fps 的对应字幕轨。硬字幕版本无法调，只能换片源。</p>
+          </div>
+        </details>
+        <details>
+          <summary>官方频道放出的整片，窗口期一般多长？</summary>
+          <div class="faq-a">
+            <p>松竹、角川的官方频道常见 7—14 天。《七武士》这一轮是 11 月 5 日至 18 日，《切腹》窗口只有 9 天。窗口结束后页面通常保留，但视频转为私人或显示不可播。</p>
+            <p>窗口片目往往不提供中文字幕，字幕轨多为日文与英文，这一点在点开播放器前就能在简介里看到。</p>
+          </div>
+        </details>
+        <details>
+          <summary>怎么判断一部片的画幅被裁过？</summary>
+          <div class="faq-a">
+            <p>查播放器媒体信息里的分辨率。1.37:1 的旧片如果显示 640×480，是 4:3 没裁；显示 720×480 或 854×480，则可能补边或裁切。</p>
+            <p>再看构图。小津的低机位画面里，榻榻米线条与人物头顶留白有固定比例，被裁后头顶空间会明显变窄。</p>
+          </div>
+        </details>
+        <details>
+          <summary>广告支持的免费平台，广告插在哪会影响观看吗？</summary>
+          <div class="faq-a">
+            <p>会。FAST 平台常在段落之间插广告，片长因此被拉长。用片长核对删减时要扣掉广告时间，按正片段计时更准。</p>
+            <p>插广告还会打断字幕连续显示，硬字幕版尤其明显，一句话可能被切成两段。</p>
+          </div>
+        </details>
+        <details>
+          <summary>Archive.org 上的片和官方频道上的片，画质差多少？</summary>
+          <div class="faq-a">
+            <p>Archive.org 条目多为 480p 至 720p 的 16mm 转录，码率 2 Mbps 上下，颗粒与抖动都在。官方频道近年放出的多为 1080p 重扫版，颗粒更细但降噪更重。</p>
+            <p>看细节选官方，图省事选档案站。两者的色彩都不算基准，不能当胶片原貌参考。</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="section" id="comments">
+        <div class="sec-head">
+          <h2>看片人的实际操作反馈</h2>
+          <span class="sec-note">保留中性甚至吐槽的语气，指向具体条目</span>
+        </div>
+        <div class="comments">
+          <article class="cmt">
+            <div class="cmt-head"><span class="cmt-avatar">海</span><span class="cmt-name">海边放映员</span><span class="cmt-time">11-07 21:14</span></div>
+            <p>《野良犬》换源后我重下了一遍，720p 确实比原来清楚，但片头东宝标那块的颗粒被抹平了，看着有点塑料感。宁可留颗粒。</p>
+            <span class="cmt-film">条目：《野良犬》1949</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="cmt-avatar">甲</span><span class="cmt-name">甲州街道</span><span class="cmt-time">11-06 10:02</span></div>
+            <p>《七武士》官方窗口的字幕是烧进画面的，英文字幕和日文重叠在底部，关不掉。看武打段落时挡了不少人马脚。</p>
+            <span class="cmt-film">条目：《七武士》1954</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="cmt-avatar">绿</span><span class="cmt-name">绿皮电车</span><span class="cmt-time">11-05 16:40</span></div>
+            <p>《日本昆虫记》那个中字版我按 1 分 40 秒提前的手动延迟调完之后就基本对得上了，片尾缺的 20 秒不影响剧情，能接受。不是所有旧片都这么走运。</p>
+            <span class="cmt-film">条目：《日本昆虫记》1963</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="cmt-avatar">冬</span><span class="cmt-name">冬木</span><span class="cmt-time">11-04 19:25</span></div>
+            <p>《东京物语》在 A 站是 1.37:1，B 站裁成 1.33:1，我拿截图对比了下，原节子站在廊下那个镜头，右边拉门被切掉一截。这种事看片前真该先查。</p>
+            <span class="cmt-film">条目：《东京物语》1953</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="cmt-avatar">纸</span><span class="cmt-name">纸窗</span><span class="cmt-time">11-02 08:51</span></div>
+            <p>说句不好听的，免费页面上标“4K 修复”的基本都得打折扣，我点开三部，媒体信息里最高也就 1080p，其中一部还是 720p 拉伸的。</p>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="cmt-avatar">火</span><span class="cmt-name">火盆</span><span class="cmt-time">10-30 22:17</span></div>
+            <p>《鬼婆》改 CC 之后字幕位置太靠上，横贯画面中部，挡了芦苇丛的构图。从可用角度说是退步。</p>
+            <span class="cmt-film">条目：《鬼婆》1964</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head"><span class="cmt-avatar">小</span><span class="cmt-name">小津的饭桌</span><span class="cmt-time">10-27 13:09</span></div>
+            <p>《饭》没有字幕轨，画面又暗，夜里看得很累。但冲着成濑对厨房那几场戏的调度，值。外挂字幕我还没找到匹配版。</p>
+            <span class="cmt-film">条目：《饭》1951</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="section" id="news">
+        <div class="sec-head">
+          <h2>相关资讯</h2>
+          <span class="sec-note">每条一个事实层级，不重复摘要</span>
+        </div>
+        <div class="news-grid">
+          <article class="news">
+            <h3>国立映画アーカイブ公开 4K 扫描片段</h3>
+            <p>对象为《东京物语》与《生之欲》各两分钟，附色温校准说明，未放出整片。</p>
+            <span class="n-meta">事实层｜10-29</span>
+          </article>
+          <article class="news">
+            <h3>FAST 平台日本电影专区的轮换节奏</h3>
+            <p>据页面上下架记录，动作片与时代剧基本一个月一轮，文戏片保留时间更长。属观察，无平台确认。</p>
+            <span class="n-meta">推测层｜11-03</span>
+          </article>
+          <article class="news">
+            <h3>字幕组就《日本昆虫记》片尾缺失作出回应</h3>
+            <p>回应称源文件本身缺尾，未提供补充；有用户贴出另一版本截图，片尾字幕共 34 秒。</p>
+            <span class="n-meta">回应层｜10-14</span>
+          </article>
+          <article class="news">
+            <h3>著作权数据库查询入口更新检索字段</h3>
+            <p>可按作者名与作品名双字段检索，结果页显示保护期终止年份。属官方工具变动。</p>
+            <span class="n-meta">事实层｜10-20</span>
+          </article>
+          <article class="news">
+            <h3>转述：某论坛帖称 11 月将有一批昭和片放出</h3>
+            <p>帖中未列出片单与平台，仅有一句预告。转述，不作事实采用。</p>
+            <span class="n-meta">转述层｜11-01</span>
+          </article>
+          <article class="news">
+            <h3>画幅对比工具在社区流传</h3>
+            <p>工具按画面黑边自动估算画幅，对 1.37:1 判断较准，对 2.35:1 会误报，需人工复核。</p>
+            <span class="n-meta">事实层｜10-25</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="section" id="rec">
+        <div class="sec-head">
+          <h2>相关推荐标签</h2>
+          <span class="sec-note">按检索意图组织，点开落到对应板块</span>
+        </div>
+        <div class="rec-tags">
+          <a href="/#picks">黑泽明 1949 野良犬 免费版</a>
+          <a href="/#analysis">东京物语 画幅 对比</a>
+          <a href="/#guide">中文字幕 帧率偏移 修正</a>
+          <a href="/#latest">松竹官方频道 限时公开 片目</a>
+          <a href="/#compare">1953 年前 公共版权 旧片</a>
+          <a href="/#faq">硬字幕 与 软字幕 区别</a>
+          <a href="/#rank">成濑巳喜男 女性题材 片单</a>
+          <a href="/#guide">16mm 转扫 画质 判断</a>
+          <a href="/#news">国立映画アーカイブ 数字档案</a>
+          <a href="/#comments">剑戟片 英文字幕 观看反馈</a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="辅助导航与条目">
+      <div class="side-box">
+        <h2>板块导航</h2>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview" data-target="overview">来源概览</a></li>
+          <li><a href="/#picks" data-target="picks">精选片目</a></li>
+          <li><a href="/#latest" data-target="latest">最新更新</a></li>
+          <li><a href="/#cats" data-target="cats">分类入口</a></li>
+          <li><a href="/#analysis" data-target="analysis">深度解析</a></li>
+          <li><a href="/#guide" data-target="guide">观看步骤</a></li>
+          <li><a href="/#compare" data-target="compare">真假免费对照</a></li>
+          <li><a href="/#rank" data-target="rank">核对榜单</a></li>
+          <li><a href="/#faq" data-target="faq">常见问答</a></li>
+          <li><a href="/#comments" data-target="comments">看片反馈</a></li>
+          <li><a href="/#news" data-target="news">相关资讯</a></li>
+          <li><a href="/#rec" data-target="rec">相关推荐</a></li>
+        </ul>
+      </div>
+      <div class="side-box">
+        <h3>窗口期临近</h3>
+        <ul class="side-mini">
+          <li><a href="/#picks">七武士 1954</a><span class="m-meta">11-18 窗口结束</span></li>
+          <li><a href="/#picks">切腹 1962</a><span class="m-meta">11-14 窗口结束</span></li>
+          <li><a href="/#picks">怪谈 1964</a><span class="m-meta">广告支持页面，无固定期限</span></li>
+        </ul>
+      </div>
+      <div class="side-box">
+        <h3>核对清单摘要</h3>
+        <ul class="side-mini">
+          <li>片长误差 ≤ 1 分钟</li>
+          <li>画幅比例与原片一致</li>
+          <li>字幕可开关</li>
+          <li>源素材规格有交代</li>
+          <li>上传者身份可查</li>
+        </ul>
+      </div>
+      <div class="side-box">
+        <h3>时间线</h3>
+        <ul class="timeline">
+          <li><time>09-20</time><b>旧片条目批量复核启动</b><span>覆盖 30 条记录</span></li>
+          <li><time>10-22</time><b>《鬼婆》字幕改 CC</b><span>位置移至安全区</span></li>
+          <li><time>11-05</time><b>《七武士》窗口重开</b><span>日英硬字幕</span></li>
+          <li><time>11-07</time><b>《野良犬》换源</b><span>720p 去隔行</span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- 页尾 -->
+<footer class="site-foot" id="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg width="34" height="34" viewBox="0 0 64 64" role="img" aria-label="胶片盘标志">
+            <rect width="64" height="64" rx="14" fill="#e8b04b"/>
+            <circle cx="32" cy="32" r="17" fill="none" stroke="#1b2a4a" stroke-width="3"/>
+            <circle cx="32" cy="32" r="5" fill="#1b2a4a"/>
+            <circle cx="32" cy="15" r="3" fill="#1b2a4a"/>
+            <circle cx="32" cy="49" r="3" fill="#1b2a4a"/>
+            <circle cx="15" cy="32" r="3" fill="#1b2a4a"/>
+            <circle cx="49" cy="32" r="3" fill="#1b2a4a"/>
+          </svg>
+          <span class="brand-name">日本电影在线观看免费</span>
+        </div>
+        <p class="foot-pos">把片源按权利状态、画幅、字幕轨拆开核对，再决定看哪一部。</p>
+        <p class="foot-note">页内片目、更新与评论中的时间、片长、分辨率均为示例登记数据，用于说明核对方法，不代表任何平台的实际片库或授权状态。所有站内链接指向本页板块。</p>
+      </div>
+      <div class="foot-col">
+        <h3>片源类型</h3>
+        <ul>
+          <li><a href="/#compare">公共版权昭和旧片</a></li>
+          <li><a href="/#latest">广告支持免费片库</a></li>
+          <li><a href="/#latest">官方限时公开窗口</a></li>
+          <li><a href="/#analysis">民间字幕压制版</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>核对方法</h3>
+        <ul>
+          <li><a href="/#guide">五步观看核对法</a></li>
+          <li><a href="/#analysis">帧率与字幕偏移</a></li>
+          <li><a href="/#rank">核对通过项排名</a></li>
+          <li><a href="/#faq">画幅判断问答</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 日本电影在线观看免费 · 民间片源核对档案</span>
+      <span>页脚更新时间 2026-11-08，对应正文变动：《野良犬》换源、《七武士》窗口重开、《鬼婆》字幕改 CC。</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "日本电影在线观看免费",
+  "description": "按权利状态、画幅与字幕轨核对免费日本电影片源的民间档案。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1953 年前的日本电影都能免费下载吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "不一定。著作权保护期按作者死亡后 70 年计算，1953 年只是常见分界。作者去世未满 70 年的作品，免费版是否合法要看具体条款。"}
+    },
+    {
+      "@type": "Question",
+      "name": "带中文字幕的免费片源为什么常出现时间轴偏移？",
+      "acceptedAnswer": {"@type": "Answer", "text": "多数中文字幕轨按 23.976 fps 制作，而 PAL 转制片源是 25 fps，帧率差随片长累积，123 分钟的片能偏出 1 分 40 秒以上。"}
+    },
+    {
+      "@type": "Question",
+      "name": "官方频道放出的整片，窗口期一般多长？",
+      "acceptedAnswer": {"@type": "Answer", "text": "松竹、角川的官方频道常见 7 至 14 天窗口，结束后页面保留但视频转为不可播。"}
+    },
+    {
+      "@type": "Question",
+      "name": "怎么判断一部片的画幅被裁过？",
+      "acceptedAnswer": {"@type": "Answer", "text": "查播放器媒体信息里的分辨率，1.37:1 旧片若显示宽高比接近 1.33 或 1.78，可能被裁切或补边。"}
+    },
+    {
+      "@type": "Question",
+      "name": "广告支持的免费平台，广告插在哪会影响观看吗？",
+      "acceptedAnswer": {"@type": "Answer", "text": "会。段落间插广告会拉长片长，按片长核对删减时要扣掉广告时间，硬字幕还可能被切成两段。"}
+    },
+    {
+      "@type": "Question",
+      "name": "Archive.org 上的片和官方频道上的片，画质差多少？",
+      "acceptedAnswer": {"@type": "Answer", "text": "档案站条目多为 480p 至 720p 的 16mm 转录，官方频道近年多为 1080p 重扫版，颗粒与降噪程度不同。"}
+    }
+  ]
+}
+</script>
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  var searchBtn = document.getElementById('searchBtn');
+  var searchInput = document.getElementById('siteSearch');
+  var feedback = document.getElementById('searchFeedback');
+  var toTop = document.getElementById('toTop');
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+
+  if(menuBtn && mainNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.innerWidth <= 760){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  function clearMarks(){
+    document.querySelectorAll('mark[data-search-mark]').forEach(function(m){
+      var parent = m.parentNode;
+      parent.replaceChild(document.createTextNode(m.textContent), m);
+      parent.normalize();
+    });
+  }
+
+  function runSearch(){
+    var q = (searchInput.value || '').trim();
+    clearMarks();
+    if(!q){
+      feedback.classList.remove('show');
+      feedback.textContent = '';
+      return;
+    }
+    var main = document.getElementById('main');
+    var walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node){
+        if(!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        var p = node.parentNode;
+        if(!p) return NodeFilter.FILTER_REJECT;
+        var tag = p.tagName;
+        if(tag === 'SCRIPT' || tag === 'STYLE' || tag === 'MARK') return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var nodes = [], n, count = 0, first = null;
+    while((n = walker.nextNode())){
+      var val = n.nodeValue;
+      var idx = val.toLowerCase().indexOf(q.toLowerCase());
+      if(idx > -1 && count < 40){
+        nodes.push({node:n, idx:idx, len:q.length});
+        count++;
+        if(!first) first = n;
+      }
+    }
+    if(count === 0){
+      feedback.classList.add('show');
+      feedback.textContent = '没有找到与「' + q + '」相关的内容，换个片名或导演名试试。';
+      return;
+    }
+    feedback.classList.add('show');
+    feedback.textContent = '找到 ' + count + ' 处匹配，已在正文标出。';
+    nodes.forEach(function(item){
+      var node = item.node;
+      var val = node.nodeValue;
+      var span = document.createElement('span');
+      var mark = document.createElement('mark');
+      mark.setAttribute('data-search-mark','1');
+      mark.style.background = '#f7ecd3';
+      mark.style.color = '#8a3220';
+      mark.style.padding = '0 2px';
+      mark.style.borderRadius = '2px';
+      span.appendChild(document.createTextNode(val.slice(0, item.idx)));
+      mark.textContent = val.slice(item.idx, item.idx + item.len);
+      span.appendChild(mark);
+      span.appendChild(document.createTextNode(val.slice(item.idx + item.len)));
+      node.parentNode.replaceChild(span, node);
+    });
+    if(first && first.parentNode){
+      first.parentNode.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }
+
+  if(searchBtn) searchBtn.addEventListener('click', runSearch);
+  if(searchInput) searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+  });
+
+  function onScroll(){
+    if(window.scrollY > 420){ toTop.classList.add('show'); }
+    else{ toTop.classList.remove('show'); }
+    var scrollPos = window.scrollY + 130;
+    var current = null;
+    sideLinks.forEach(function(a){
+      var id = a.getAttribute('data-target');
+      var el = document.getElementById(id);
+      if(el && el.offsetTop <= scrollPos){ current = a; }
+    });
+    sideLinks.forEach(function(a){ a.classList.remove('on'); });
+    if(current) current.classList.add('on');
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+
+  if(toTop) toTop.addEventListener('click', function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'});
+  });
+})();
+</script>
+</body>
+                                                                     </html>
